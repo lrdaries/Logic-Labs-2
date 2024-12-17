@@ -2,45 +2,45 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>LOGIC LABS FORM</title>
-    <link rel="stylesheet" href="logicstyle.css">
+    <title>SIGNUP</title>
+    <link rel="stylesheet" href="register.css">
 	<style>
 		@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300&family=Roboto&display=swap');
 		</style>
 </head>
 <body>
-    <header>
-        <h1>REGISTER</h1>
+    <header class="register">
+        <h1>SIGNUP</h1>
         <h3>Please Fill The Form Below</h3>
     </header>
 
     <main>
-        <section>
+        <div class="login-box">
             <form>
-                <div>
+                <div class="input-box">
                     <label for="firstname">First Name:</label>
                     <br>
-                    <input type="text" name="Firstname" placeholder="Firstname">
+                    <input type="text" name="Firstname" placeholder="Firstname" class="input-field" required>
                 </div>
                 <br>
-                <div>
+                <div class="input-box">
                     <label for="lastname">Last Name:</label> 
                     <br>
-                    <input type="text" name="lastname" placeholder="Lastname">
+                    <input type="text" name="lastname" placeholder="Lastname" class="input-field" required>
                 </div>
                 <br>
-                <div>
+                <div class="input-box">
                     <label for="email">Your E-mail Address:</label><br>
-                    <input type="email" name="email" placeholder="Write your E-mail Address"/>
+                    <input type="email" name="email" placeholder="Write your E-mail Address" class="input-field" required>
                 </div> <br>
-                <div>
+                <div class="input-box">
                     <label for="password">Password:</label> <br>
-                    <input type="password" name="password" placeholder="Password">
+                    <input type="password" name="password" placeholder="Password" class="input-field" required>
                 </div> <br>
                 <div>
                     <label for="gender">Gender:</label>
                     <br>
-                    <select name="gender" >
+                    <select name="gender" required >
                     <option value="">Male</option>
                     <option value="">Female</option>
                     <option value="">Other</option>
@@ -49,7 +49,7 @@
                 <br>
                 <div>
                     <label for="residence">Country of Residence:</label><br>
-                    <select name="residence" id="" >
+                    <select name="residence" id="" required >
                         <option value="">Country</option>
                         <option value="AF">Afghanistan</option>
                         <option value="AX">Åland Islands</option>
@@ -306,9 +306,9 @@
                      </select>
                 </div>
                 <br>
-                <div>
+                <div class="input-box">
                     <label for="number">Phone Number</label> <br>
-                    <input type="tel" name="number" >
+                    <input type="tel" name="number" class="input-field" required>
                 </div> <br>
                 <div>
                     <label for="age">Date of Birth:</label><br>
@@ -343,15 +343,19 @@
                     <textarea name="" 
                     id=""
                     rows="3"
-                    cols="25"></textarea>
+                    cols="25" required></textarea>
                 </div>
                 <nav>
                     <button type="submit" name="submit">Submit</button>
 				</nav>
                 
             </form>
-        </section>
+		</div>
+        
     </main>
+	<footer>
+		<p> &#169;LOGIC LABS 2024 </p>
+	 </footer>
     
 
 </body>
